@@ -1,5 +1,5 @@
 const app = Vue.createApp({
-    data(){
+    data() {
         return {
             firstName: 'Zahra',
             lastName: 'Zandieh',
@@ -7,6 +7,15 @@ const app = Vue.createApp({
             gender: 'female',
             picture: 'https://randomuser.me/api/portraits/women/34.jpg',
         }
-    }
+    },
+    methods: {
+        getUser() {
+            this.firstName = 'emad'
+            this.lastName = 'arabShahi'
+            this.email = 'emadArabShahi@gmail.com'
+            this.gender = 'male'
+            this.picture = 'https://randomuser.me/api/portraits/men/34.jpg'
+        },
+    },
 })
 app.mount('#app')
